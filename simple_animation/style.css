@@ -1,0 +1,19 @@
+.slidein {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    100% {
+        margin-left: 0%;
+        width: 100%;
+    }
+}

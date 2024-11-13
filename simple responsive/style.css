@@ -1,0 +1,157 @@
+@font-face {
+    font-family: myLight;
+    src: url("./roboto/Roboto/Roboto-Light.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: myRegular;
+    src: url("./roboto/Roboto/Roboto-Regular.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: myBlack;
+    src: url("./Playfair_Display/static/PlayfairDisplay-Black.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100dvh;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    background-color: #F3EED9;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #824936;
+
+    .toptiny {
+        font-size: 18px;
+        letter-spacing: 3px;
+        font-family: myLight;
+    }
+
+    .title {
+        font-size: 60px;
+        font-family: myBlack;
+        width: 70%;
+    }
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 150px;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+        padding: 20px;
+        margin: 0 auto;
+        font-size: 36px;
+        font-family: myBlack;
+        color: #824936;
+    }
+
+    .paragraphs {
+        font-family: myRegular;
+        padding-top: 20px;
+        display: flex;
+        gap: 80px;
+        max-width: 1000px;
+        font-size: 21px;
+        color: #222C2A;
+        line-height: 26px;
+    }
+}
+
+.third {
+    display: flex;
+    padding: 60px 130px;
+    background-color: #222C2A;
+    gap: 20px;
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 60%;
+
+        .title {
+            color: #F3EED9;
+            font-family: myBlack;
+            font-size: 36px;
+        }
+
+        .p {
+            font-family: myRegular;
+        font-size: 21px;
+        color: #F3EED9;
+        line-height: 26px;
+        
+        }
+    }
+
+    .right {
+        width: 40%;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.fourth {
+    display: flex;
+    padding: 60px 130px;
+    background-color: #824936;
+    gap: 20px;
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 60%;
+
+        .title {
+            color: #F3EED9;
+            font-family: myBlack;
+            font-size: 36px;
+        }
+
+        .p {
+            font-family: myRegular;
+        font-size: 21px;
+        color: #F3EED9;
+        line-height: 26px;
+        
+        }
+
+        
+    }
+
+    .left {
+        width: 40%;
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+}

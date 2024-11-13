@@ -1,0 +1,27 @@
+.image-container {
+  /* Ensure consistent scrolling behavior: */
+  scroll-behavior: smooth;
+
+  /* Set up horizontal overflow and scrolling: */
+  overflow-x: scroll;
+  display: flex;
+
+  /* Ensure images display inline (required for scroll snap): */
+  white-space: nowrap;
+
+  /* Set smooth scrolling animation, if desired: */
+  scroll-snap-type: x mandatory;
+  scroll-snap-duration: 0.2s; /* Adjust duration as needed */
+}
+
+.image-container img {
+  /* Snap each image to the center when scrolled: */
+  scroll-snap-align: center;
+
+  /* Ensure equal sizing for consistent snapping: */
+  width: 33.33%; /* Adjust based on actual image dimensions */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Fill container proportionally */
+
+  /* Optional styling for borders, spacing, etc. */
+}

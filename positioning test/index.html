@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click to Draw Red Square</title>
+    <style>
+        #white-square {
+            width: 900px;
+            height: 900px;
+            background-color: white;
+            border: 1px solid black;
+            /* Optional border for reference */
+            margin: 50px auto;
+            /* Center the square */
+            position: relative;
+        }
+
+        .red-square {
+            position: absolute;
+            width: 50px;
+            /* Adjust size as needed */
+            height: 50px;
+            /* Adjust size as needed */
+            background-color: red;
+            border: 1px solid black;
+            /* Optional border for reference */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="white-square"></div>
+
+    <script>
+        const whiteSquare = document.getElementById("white-square");
+
+
+        whiteSquare.addEventListener("click", function (event) {
+            const box = whiteSquare.getBoundingClientRect()
+
+
+            // Create a new red square element
+            const newRedSquare = document.createElement("div");
+            newRedSquare.classList.add("red-square");
+            newRedSquare.style.left = event.clientX - box.left - 25 + "px";
+            newRedSquare.style.top = event.clientY - box.top - 25 + "px";
+
+            // Add the new red square to the white square and store it in the array
+            whiteSquare.replaceChildren();
+            whiteSquare.appendChild(newRedSquare);
+
+        });
+    </script>
+</body>
+
+</html>

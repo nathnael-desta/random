@@ -1,0 +1,26 @@
+.green {
+    color: black;
+}
+
+.mybutton {
+    outline: red 2px solid;
+    padding: 5px;
+}
+
+.mybutton:hover {
+    cursor: pointer;
+}
+
+.light {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3 ease;
+    transition: color 0.3 ease;
+}
+
+.dark {
+    background-color: red;
+    color: white;
+    transition: background-color 0.3 ease;
+    transition: color 0.3 ease;
+}

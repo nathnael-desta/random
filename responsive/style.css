@@ -1,0 +1,87 @@
+@font-face {
+    font-family: myBold;
+    src: url("./roboto/Roboto/Roboto-Bold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: myRegular;
+    src: url("./roboto/Roboto/Roboto-Regular.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: myThinItalic;
+    src: url("./Assets/fonts/Roboto-ThinItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+*, *::before, *::after {  /* didn't know that * alone didn't cover before and after*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top {
+    font-family: myRegular;
+    background-color: #213E4B;
+    padding: 6rem 0;
+
+    .container {
+        width: 80%;
+        max-width: 1000px; /* instead of having it be no pading on the top and make the padding on the container
+                              it is better to have a concsistent padidng on the larger one (only vertically) and
+                              have a width of percentage and center it with width: 0 auto instead of it having a 
+                              set padding and the left right padding not change for smaller screen sizes.
+                              also max width to make it not look weird and steatched on wide screens    
+        */
+        color: white;   /*if i want the text and buttons on the container to be of a certian widht instead of
+                            the full side to side, instead of making the container it self like 30% of top and 
+                            somehow centering that, we can make the container centered always and then have the
+                            text be another div inside of the container and have it be 50% width of it.
+                            if you remember this is like with the picture with float left that is outside of the
+                            div but the whole thing is somehow centered, ahve a centered div and manipulate the things
+                            around it instead of a random combination of things to make the whole thing centered.                    
+        */
+        margin: 0 auto;
+        font-family: myBold;
+
+        .container__text {
+            width: 60%;
+
+            .title {
+                font-size: 3rem;
+                padding: 0rem 0 1.5rem;
+                line-height: 3rem;
+            }
+    
+            .paragraph {
+                padding: 0 0 2rem 0;
+                color: rgba(255, 255, 255, 0.623);
+            }
+    
+            button {
+                outline: none;
+                box-shadow: none;
+                border: none;
+                background-color: #2CC0DD;
+                padding: 1rem;
+                font-family: myBold;
+                border-radius: 300px; /* setitng border radius to a large px number makes it prefrectly rounded for the height*/
+                cursor: pointer;
+                box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.25);
+        
+            }
+
+        }
+        
+
+       
+    }
+
+
+    
+}
